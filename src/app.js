@@ -1,12 +1,15 @@
 import express from 'express';
 import cors from 'cors';
 import cookieparser from 'cookie-parser';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:5173", // Allow only your frontend origin
+  origin: "https://snakebitv2.vercel.app", // Allow only your frontend origin
   credentials: true, // Allow credentials (cookies, authentication headers, etc.)
 };
 
